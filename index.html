@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Pill Box</title>
 <meta name="theme-color" content="#2c5f58">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
 <!-- Usage numbers and owner tools, shared by every Spectrum Tech Engine app -->
 <script src="https://thespectrumtechengine.com/ste-owner.js" data-app="pill-box" defer></script>
@@ -1133,5 +1133,7 @@ document.addEventListener("visibilitychange", () => { if (!document.hidden) { re
 initCloud();
 })();
 </script>
+<!-- Lets the app open offline once it has been visited, and be installed as an app -->
+<script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});</script>
 </body>
 </html>

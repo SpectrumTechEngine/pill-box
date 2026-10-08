@@ -1,0 +1,10 @@
+{
+  "appId": "com.thespectrumtechengine.pillbox",
+  "appName": "Pill Box",
+  "webDir": "www",
+  "backgroundColor": "#0f0c29",
+  "server": {
+    "url": "https://thespectrumtechengine.com/pill-box/",
+    "errorPath": "index.html"
+  }
+}
